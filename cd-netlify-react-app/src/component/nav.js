@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function Nav() {
   return (
-    <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-black text-white overflow-hidden">
+    <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-yellow-500 text-white overflow-hidden">
       {({ open, close }) => (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
@@ -47,7 +47,7 @@ export default function Nav() {
                 className={classNames(
                   item.current
                     ? 'bg-gray-900 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    : 'text-black hover:bg-gray-700 hover:text-white',
                   'rounded-md px-3 py-2 text-sm font-medium'
                 )}
                 aria-current={item.current ? 'page' : undefined}
@@ -58,7 +58,7 @@ export default function Nav() {
           </div>
 
           {/* Mobile menu (hidden on larger screens) */}
-          <Disclosure.Panel className="sm:hidden fixed top-0 left-0 w-full h-full bg-black opacity-80">
+          <Disclosure.Panel className="sm:hidden fixed top-0 left-0 w-full h-full bg-yellow-500 opacity-80">
         <div className="flex items-center justify-center h-full">
           <div className="flex flex-col items-center space-y-4">
             {navigation.map((item) => (

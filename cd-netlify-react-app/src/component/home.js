@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className="cv-container mt-8 sm:mt-0">
           <a href={cv} target="_blank" rel="noopener noreferrer">
-            Voir mon CV
+           CV complet ici
           </a>
         </div>
       </div>
