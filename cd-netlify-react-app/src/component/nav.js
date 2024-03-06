@@ -1,9 +1,10 @@
+import React, { useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import profileImage from '../logototu.png';
 
 const navigation = [
-  { name: 'Acceuil', href: '#', current: true },
+  { name: 'Accueil', href: '#', current: true },
   { name: 'Présentation', href: '#presentation', current: false },
   { name: 'Projets', href: '#projets', current: false },
   { name: 'Contact', href: '#contact', current: false },
@@ -14,6 +15,12 @@ function classNames(...classes) {
 }
 
 export default function Nav() {
+  const [currentPage, setCurrentPage] = useState('Accueil');
+
+  const handleNavigationClick = (name) => {
+    setCurrentPage(name);
+  };
+
   return (
     <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-yellow-500 text-white overflow-hidden">
       {({ open, close }) => (
@@ -44,13 +51,16 @@ export default function Nav() {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={() => {
+                  handleNavigationClick(item.name);
+                }}
                 className={classNames(
-                  item.current
+                  item.name === currentPage
                     ? 'bg-gray-900 text-white'
                     : 'text-black hover:bg-gray-700 hover:text-white',
                   'rounded-md px-3 py-2 text-sm font-medium'
                 )}
-                aria-current={item.current ? 'page' : undefined}
+                aria-current={item.name === currentPage ? 'page' : undefined}
               >
                 {item.name}
               </a>
@@ -59,31 +69,32 @@ export default function Nav() {
 
           {/* Mobile menu (hidden on larger screens) */}
           <Disclosure.Panel className="sm:hidden fixed top-0 left-0 w-full h-full bg-yellow-500 opacity-80">
-        <div className="flex items-center justify-center h-full">
-          <div className="flex flex-col items-center space-y-4">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                onClick={() => {
-                  close(); // Utilisez la fonction de fermeture close ici
-                }}
-                className={classNames(
-                  item.current
-                    ? 'text-white'
-                    : 'text-gray-300 hover:text-white',
-                  'text-lg font-medium'
-                )}
-                aria-current={item.current ? 'page' : undefined}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
+            <div className="flex items-center justify-center h-full">
+              <div className="flex flex-col items-center space-y-4">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => {
+                      handleNavigationClick(item.name);
+                      close();
+                    }}
+                    className={classNames(
+                      item.name === currentPage
+                        ? 'text-white'
+                        : 'text-gray-300 hover:text-white',
+                      'text-lg font-medium'
+                    )}
+                    aria-current={item.name === currentPage ? 'page' : undefined}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </Disclosure.Panel>
         </div>
-      </Disclosure.Panel>
-    </div>
-  )}
-</Disclosure>
+      )}
+    </Disclosure>
   );
 }
