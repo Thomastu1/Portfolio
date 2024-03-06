@@ -1,0 +1,33 @@
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.image-container {
+    margin-top: 20px;
+    margin-right: 200px;
+  }
+
+.cv-container{
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.h2{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.titre{
+    font-size: 5rem;
+    
+}
+
+.hoome{
+    color: rgb(255, 255, 255);
+  }

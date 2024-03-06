@@ -1,23 +1,18 @@
 
 import './App.css';
+import Nav from './component/nav';
+import Homea from './component/home';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+<Nav/>
+<Homea/>
 
-   
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+
+
+    </div>)
+    }
 
 export default App;
