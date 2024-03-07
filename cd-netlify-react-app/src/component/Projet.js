@@ -11,12 +11,14 @@ const Projet = () => {
     <div className="section-container">
 
       <div className="column">
+      <a href="https://github.com/Thomastu1/Jobboard">
         <img src={img1} alt="1" />
         <div className="description">Projet Jobboard</div>
       </div>
       <div className="column">
+      <a href="https://github.com/Thomastu1/Portfolio">
         <img src={img2} alt="2" />
-        <div className="description">Projet TowerDefense</div>
+        <div className="description">Projet CV</div>
       </div>
       <div className="column">
         <img src={img3} alt="3" />
