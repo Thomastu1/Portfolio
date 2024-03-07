@@ -81,8 +81,8 @@ export default function Nav() {
                     }}
                     className={classNames(
                       item.name === currentPage
-                        ? 'text-white'
-                        : 'text-gray-300 hover:text-white',
+                        ? 'text-black'
+                        : 'text-gray-900 hover:text-white',
                       'text-lg font-medium'
                     )}
                     aria-current={item.name === currentPage ? 'page' : undefined}
