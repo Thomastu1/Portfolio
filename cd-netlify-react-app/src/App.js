@@ -3,6 +3,8 @@ import './App.css';
 import Nav from './component/nav';
 import Homea from './component/home';
 import Projet from './component/Projet';
+import Contact from './component/contact';
+
 
 function App() {
   return (
@@ -25,6 +27,13 @@ function App() {
 <p> <h1>Projets</h1></p>
 <br/>
 <Projet/> 
+<br/>
+
+<a href="#contact" id="contact"> </a>
+<br/>
+
+<Contact/>
+
 
 
 
