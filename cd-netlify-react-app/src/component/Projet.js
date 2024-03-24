@@ -23,8 +23,10 @@ const Projet = () => {
         </a>
       </div>
       <div className="column">
+      <a href="https://github.com/Thomastu1/Trello-App">
         <img src={img3} alt="3" />
-        <div className="description">Projet ChatBot</div>
+        <div className="description">Projet Trello</div>
+        </a>
       </div>
     </div>
   );
