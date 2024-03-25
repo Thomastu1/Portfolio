@@ -6,7 +6,7 @@ import Linkedin from '../linkedin.png';
 export default function Contact() {
   return (
     
-    <div className="bg-yellow-500 py-24 sm:py-32">
+    <div className="bg-yellow-600 py-24 sm:py-32">
         <p> <h1>Me contacter</h1></p>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
