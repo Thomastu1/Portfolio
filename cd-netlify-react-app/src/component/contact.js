@@ -5,10 +5,10 @@ import Linkedin from '../linkedin.png';
 
 export default function Contact() {
   return (
-    <div style={{ backgroundColor: '#8D73EA', paddingTop: '6rem', paddingBottom: '8rem' }}>
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h1 className="text-center text-3xl font-bold leading-9 text-white">Me contacter</h1>
-        <div className="mx-auto mt-10 flex items-center justify-center space-x-8">
+    <div className="bg-[#8D73EA] py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <h1 className="text-3xl font-bold leading-9 text-white">Me contacter</h1>
+        <div className="mt-10 flex items-center justify-center space-x-8">
           <a href="mailto:tu.thomas01@gmail.com" className="w-20">
             <img className="w-full h-auto" src={mail} alt="Email" />
           </a>
