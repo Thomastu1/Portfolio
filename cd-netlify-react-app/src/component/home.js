@@ -15,10 +15,10 @@ const Home = () => {
   
         <div className="image-container flex items-center justify-end mt-8 sm:mt-0">
           <p className="h2">
-            Développeur web FrontEnd | En recherche d'une alternance pour Janvier 2024
+            Brand content et management | En recherche d'une alternance pour Septembre 2024
             <br />
             <br />
-            Rythme : 3 jours entreprise (mercredi - vendredi) | 2 jours formation (lundi - mardi)
+            Rythme : 4 jours entreprise (lundi - jeudi) | 1 jours formation (vendredi)
           </p>
           <img src={profileImage} alt="Profil" className="profile-image" />
         </div>

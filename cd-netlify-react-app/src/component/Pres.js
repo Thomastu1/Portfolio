@@ -21,14 +21,20 @@ const Pres = () => {
       date: '2016',
       description: 'Réception des marchandises, conditionnement et étiquetage'
     },
-    // Ajoutez d'autres expériences selon vos besoins
+
   ];
 
   const education = [
     {
+      degree: 'Master Brand Content et Management',
+      school: 'Paris école de management à La defense',
+      date: '2024-2026',
+      description: 'Cours axés sur le management et la communication digitale',
+    },
+    {
         degree: 'Master Expert en Technologies de l Information',
         school: 'Epitech au Kremlin-Bicêtre',
-        date: '2023-2026',
+        date: '2023-2024',
         description: 'Cours axés sur les technologies web et de la programmation',
       },
     {
@@ -44,7 +50,7 @@ const Pres = () => {
         date: '2019',
         description: 'Spécialisation sciences de l ingénieur',
       },
-    // Ajoutez d'autres formations selon vos besoins
+
   ];
 
   return (

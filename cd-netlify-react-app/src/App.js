@@ -24,7 +24,7 @@ function App() {
 <br/>
 <br/>
 <a href="#projets" id="projets"> </a>
-<p> <h1>Projets</h1></p>
+<p> <h1>Projets Web</h1></p>
 <br/>
 <Projet/> 
 <br/>
