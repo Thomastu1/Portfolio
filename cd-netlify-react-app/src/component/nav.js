@@ -69,7 +69,7 @@ export default function Nav() {
           </div>
 
           {/* Mobile menu (hidden on larger screens) */}
-          <Disclosure.Panel className="sm:hidden fixed top-0 left-0 w-full h-full bg-[#8D73EA] opacity-80">
+          <Disclosure.Panel style={{ backgroundColor: '#8D73EA', opacity: 0.8 }} className="sm:hidden fixed top-0 left-0 w-full h-full">
             <div className="flex items-center justify-center h-full">
               <div className="flex flex-col items-center space-y-4">
                 {navigation.map((item) => (
