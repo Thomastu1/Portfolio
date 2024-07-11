@@ -23,7 +23,7 @@ export default function Nav() {
   };
 
   return (
-    <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-yellow-600 text-white overflow-hidden">
+    <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-[#8D73EA] text-white overflow-hidden">
       {({ open, close }) => (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
