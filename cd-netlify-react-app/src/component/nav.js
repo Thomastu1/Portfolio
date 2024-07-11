@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import profileImage from '../logototu.png';
+import './nav.css';
 
 const navigation = [
   { name: 'Accueil', href: '#', current: true },
