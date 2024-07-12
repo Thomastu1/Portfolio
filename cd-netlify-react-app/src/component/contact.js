@@ -5,7 +5,7 @@ import Linkedin from '../linkedin.png';
 
 export default function Contact() {
   return (
-    <div className="bg-[#8D73EA] py-24 sm:py-32">
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <h1 className="text-3xl font-bold leading-9 text-white">Me contacter</h1>
         <div className="mt-10 flex items-center justify-center space-x-8">
@@ -20,6 +20,6 @@ export default function Contact() {
           </a>
         </div>
       </div>
-    </div>
+
   );
 }
