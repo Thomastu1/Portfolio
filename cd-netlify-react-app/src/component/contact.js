@@ -5,8 +5,7 @@ import Linkedin from '../linkedin.png';
 
 export default function Contact() {
   return (
-
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+<div>
         <h1 className="text-3xl font-bold leading-9 text-white">Me contacter</h1>
         <div className="mt-10 flex items-center justify-center space-x-8">
           <a href="mailto:tu.thomas01@gmail.com" className="w-20">
@@ -19,7 +18,7 @@ export default function Contact() {
             <img className="w-full h-auto" src={Linkedin} alt="LinkedIn" />
           </a>
         </div>
-      </div>
+        </div>
 
   );
 }
