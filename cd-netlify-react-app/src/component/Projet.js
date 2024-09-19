@@ -1,4 +1,3 @@
-// Projet.jsx
 
 import React from 'react';
 import './projet.css';
