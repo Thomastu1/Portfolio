@@ -32,11 +32,11 @@ function App() {
           target="_blank" 
           rel="noopener noreferrer"
           style={{
-            border: '2px solid black', 
+            border: '8px solid white', 
             padding: '5px', 
             display: 'inline-block', 
             textDecoration: 'none', 
-            color: 'black'
+            color: 'white'
           }}
         
         >
