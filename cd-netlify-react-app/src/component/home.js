@@ -2,7 +2,6 @@
 import React from 'react';
 import './home.css';
 import profileImage from '../head.png'
-import cv from '../CV.jpg'
 
 
 
