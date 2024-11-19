@@ -1,6 +1,11 @@
 h2{
     color: white;
     font-size: 2rem;
+
+}
+.mo{
+  text-align: center; 
+
 }
 h3{
     color: white;
@@ -11,18 +16,6 @@ p{
     color: white;
 }
 
-/* Ajoutez ces styles pour la barre blanche entre les sections */
-.grid::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 5px;
-    height: 100%;
-    background-color: #fff; /* Couleur de la barre blanche */
-    transform: translateX(-50%);
-  }
-  
   /* Ajoutez ces styles pour l'espace autour de la barre */
   .grid {
     position: relative;
@@ -34,3 +27,4 @@ p{
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
   }
+

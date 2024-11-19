@@ -1,93 +1,115 @@
 import React from 'react';
 import './pres.css';
-
+import Image from '../Tu_Thomas_TP.jpg';
+import NetflixVideo from '../Netflix.Final.mp4'; 
+import Finale from '../Final.mp4';
+import Toto from '../TU_Thomas.mp4';
 const Pres = () => {
-  const experiences = [
-    {
-        title: 'UX/UI Designer (alternance)',
-        company: 'Beevora',
-        date: '2022',
-        description: 'Définition et conception des landing pages,benchmark, création avec Figma'
-      },
-    {
-        title: 'Assistant Digital Designer (stage)',
-        company: 'Nova',
-        date: '2021',
-        description: 'Réalisation de contenus : annonces publicitaires, images promotionnelles avec Photoshop, MotionDesign, Excel'
-      },
-    {
-      title: 'Employé Polyvalent (stage)',
-      company: 'Électroménager Pièces Services',
-      date: '2016',
-      description: 'Réception des marchandises, conditionnement et étiquetage'
-    },
-
-  ];
-
-  const education = [
-    {
-      degree: 'Master Brand Content et Management',
-      school: 'Paris école de management à La defense',
-      date: '2024-2026',
-      description: 'Cours axés sur le management et la communication digitale',
-    },
-    {
-        degree: 'Master Expert en Technologies de l Information',
-        school: 'Epitech au Kremlin-Bicêtre',
-        date: '2023-2024',
-        description: 'Cours axés sur les technologies web et de la programmation',
-      },
-    {
-      degree: 'Management du numérique',
-      school: 'Web school factory à Paris',
-      date: '2019-2023',
-      description: 'Cours axés sur les technologies web, design et management de projets numériques',
-    },
-
-    {
-        degree: 'Baccalauréat Scientifique',
-        school: 'Lycée les Pierres Vives à Carrières-sur-Seine',
-        date: '2019',
-        description: 'Spécialisation sciences de l ingénieur',
-      },
-
-  ];
-
   return (
-    
-    <div className="grid grid-cols-2 gap-8">
+    <div className="flex flex-col items-start gap-8">
+      {/* Image de profil */}
       <div>
-
-
-        <h2>Expérience Professionnelle</h2>
-        <ul>
-          {experiences.map((experience, index) => (
-            <li key={index}>
-              <h3>{experience.title}</h3>
-              <p>{experience.company} / {experience.date}</p>
-              <p>{experience.description}</p>
-              <br />
-            </li>
-            
-          ))}
-        </ul>
+        <img
+          src={Image}
+          alt="img"
+          className="image"
+          style={{
+            width: '800px',
+            height: 'auto',
+            marginLeft: '5%',
+            borderRadius: '8px',
+            border: '2px solid #ddd',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          }}
+        />
       </div>
 
-      <div>
-        <h2>Formation Académique</h2>
-        <ul>
-          {education.map((edu, index) => (
-            <li key={index}>
-              <h3>{edu.degree}</h3>
-              <p>{edu.school} / {edu.date}</p>
-              <p>{edu.description}</p>
-              <br />
-            </li>
-            
-          ))}
-        
-        </ul>
+      {/* Première iframe Figma */}
+      <div style={{ alignSelf: 'flex-end' }}>
+        <iframe
+          style={{
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            borderRadius: '8px',
+            width: '800px',
+            height: '450px',
+            paddingRight: '5%',
+          }}
+          src="https://embed.figma.com/proto/oQdPj2mWfs2Aqrwl5szZpl/FT3--CDN?node-id=972-218&node-type=canvas&scaling=min-zoom&content-scaling=fixed&page-id=136%3A0&starting-point-node-id=972%3A218&show-proto-sidebar=1&embed-host=share"
+          allowFullScreen
+          title="Figma Prototype 1"
+        ></iframe>
+      </div>
 
+      {/* Deuxième iframe Figma */}
+      <div style={{ alignSelf: 'flex-start' }}>
+        <iframe
+          style={{
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            borderRadius: '8px',
+            width: '800px',
+            height: '450px',
+            marginLeft: '5%',
+          }}
+          src="https://embed.figma.com/proto/zjFnukqTQK7W7R7yhzrajG/Dataviz-ft2?node-id=1681-188&node-type=canvas&scaling=contain&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+          allowFullScreen
+          title="Figma Prototype 2"
+        ></iframe>
+      </div>
+
+      {/* Troisième iframe Figma */}
+      <div style={{ alignSelf: 'flex-end' }}>
+        <iframe
+          style={{
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            borderRadius: '8px',
+            width: '800px',
+            height: '450px',
+            paddingRight: '5%',
+          }}
+          src="https://embed.figma.com/proto/DVBo9RubB4rUx0knXc9yHk/Portfolio-Thomas-TU?node-id=63-2042&node-type=canvas&scaling=min-zoom&content-scaling=fixed&page-id=63%3A1632&starting-point-node-id=63%3A2042&embed-host=share"
+          allowFullScreen
+          title="Figma Prototype 3"
+        ></iframe>
+      </div>
+
+      {/* Titre pour la section Motion */}
+      <div style={{ alignSelf: 'center' }}>
+        <h1 className="mo">Motion</h1>
+      </div>
+
+      {/* Vidéo */}
+      <div style={{ alignSelf: 'flex-start', marginLeft: '5%' }}>
+        <video
+          src={NetflixVideo}
+          controls
+          style={{
+            width: '650px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          }}
+        ></video>
+      </div>
+      <div style={{ alignSelf: 'center', marginLeft: '5%' }}>
+        <video
+          src={Finale}
+          controls
+          style={{
+            width: '650px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          }}
+        ></video>
+      </div>
+      <div style={{ alignSelf: 'flex-end',paddingRight: '5%' }}>
+        <video
+          src={Toto}
+          controls
+          style={{
+            width: '650px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+          }}
+        ></video>
       </div>
     </div>
   );

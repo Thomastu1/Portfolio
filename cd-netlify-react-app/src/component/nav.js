@@ -6,8 +6,8 @@ import './nav.css';
 
 const navigation = [
   { name: 'Accueil', href: '#', current: true },
-  { name: 'Présentation', href: '#presentation', current: false },
-  { name: 'Projets', href: '#projets', current: false },
+  { name: 'Projets', href: '#presentation', current: false },
+  { name: 'Projets Perso', href: '#projets', current: false },
   { name: 'Contact', href: '#contact', current: false },
 ];
 
@@ -23,7 +23,7 @@ export default function Nav() {
   };
 
   return (
-    <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-[#8D73EA] text-white overflow-hidden">
+    <Disclosure as="nav" className="fixed top-0 z-50 w-full bg-[#3930A6] text-white overflow-hidden">
       {({ open, close }) => (
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
 
