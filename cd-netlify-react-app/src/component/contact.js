@@ -5,6 +5,7 @@ import Linkedin from '../linkedin.png';
 export default function Contact() {
   return (
 <div className='bg-[#3930A6]'>
+  <br />
         <h1 className="text-3xl font-bold leading-9 text-white">Me contacter</h1>
         <div className="mt-10 flex items-center justify-center space-x-8">
           <a href="mailto:tu.thomas01@gmail.com" className="w-20">

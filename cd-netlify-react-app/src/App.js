@@ -143,7 +143,7 @@ function App() {
         />
 
 </div>
-      {/* Section Contact */}
+  
       <a href="#contact" id="contact"> </a>
       <Contact />
     </div>
