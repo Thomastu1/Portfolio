@@ -18,6 +18,11 @@ const Home = () => {
             <br />
             <br />
             Rythme : 4 jours entreprise (lundi - jeudi) | 1 jours formation (vendredi)
+            <br />
+            <br />
+            Passioné par les réseaux sociaux, la création de contenu et les sports d'équipes tels que le football et le basketball mais aussi le volley-ball, je connais l'importance de la cohésion d'équipe et de la communication.
+            <br />
+            De plus je pratique le volley-ball 2 jours par semaine en loisir.
           </p>
           <img src={profileImage} alt="Profil" className="profile-image" />
         </div>
