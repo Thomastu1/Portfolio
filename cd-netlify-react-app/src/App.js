@@ -10,9 +10,14 @@ import cvcv3 from './Desktop - 3.png';
 import meme from './image 3.png';
 import meme1 from './Group 1.png';
 import meme2 from './meme1.png';
+
+
 function App() {
   return (
-    <div className="App">
+    
+    <div className="App" >
+
+      
       {/* Barre de navigation */}
       <Nav />
       
