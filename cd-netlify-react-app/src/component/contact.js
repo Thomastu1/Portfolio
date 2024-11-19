@@ -1,6 +1,5 @@
 import React from 'react';
 import mail from '../email.png';
-import Github from '../github.png';
 import Linkedin from '../linkedin.png';
 
 export default function Contact() {
