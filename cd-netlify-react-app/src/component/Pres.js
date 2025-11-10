@@ -3,7 +3,7 @@ import './pres.css';
 import Image from '../Tu_Thomas_TP.jpg';
 import NetflixVideo from '../Netflix.Final.mp4'; 
 import Finale from '../Final.mp4';
-import Toto from '../TU_Thomas.mp4';
+import Toto from '../CVVIDThomas.mp4';
 const Pres = () => {
   return (
     <div className="flex flex-col items-start gap-8">

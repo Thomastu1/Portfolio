@@ -14,7 +14,7 @@ const Home = () => {
   
         <div className="image-container flex items-center justify-end mt-8 sm:mt-0">
           <p className="h2">
-            Brand content et management | En recherche d'un stage alterné dès que possible
+            Brand content et management | En d'une alternance dès que possible dans la communication ou marketing
             <br />
             <br />
             Rythme : 4 jours entreprise (lundi - jeudi) | 1 jours formation (vendredi)
